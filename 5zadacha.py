@@ -1,4 +1,2 @@
-﻿word = "Ура!!!"
-print(word)
-print(word)
-print(word)
+﻿name = input("Как тебя зовут? ")
+print("Привет,", name)
