@@ -1,3 +1,4 @@
-﻿print("Я изучаю Python.")
-print("Это мой первый код.")
-print("Автор: Кузнецов Д.")
+﻿word = "Ура!"
+print(word)
+print(word)
+print(word)
