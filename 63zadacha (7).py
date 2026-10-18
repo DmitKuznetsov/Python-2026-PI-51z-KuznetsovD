@@ -1,15 +1,19 @@
-﻿m = int(input())
-english = set()
-for i in range(m):
-    english.add(input())
+﻿first = set()
+while True:
+    s = input()
+    if s == "":
+        break
+    first.add(int(s))
 
-n = int(input())
-german = set()
-for i in range(n):
-    german.add(input())
+second = set()
+while True:
+    s = input()
+    if s == "":
+        break
+    second.add(int(s))
 
-only_one = (english - german) | (german - english)
-if only_one:
-    print(len(only_one))
+common = first & second
+if common:
+    print(" ".join(str(x) for x in common))
 else:
-    print("NO")
+    print("EMPTY")

@@ -1,16 +1,14 @@
-﻿n = int(input())
-names = [input() for _ in range(n)]
-
-seen = set()
-duplicates = set()
-for name in names:
-    if name in seen:
-        duplicates.add(name)
+﻿m = int(input())
+present_everywhere = None
+for i in range(m):
+    k = int(input())
+    lesson = set()
+    for j in range(k):
+        lesson.add(input())
+    if present_everywhere is None:
+        present_everywhere = lesson
     else:
-        seen.add(name)
+        present_everywhere &= lesson
 
-count = 0
-for name in names:
-    if name in duplicates:
-        count += 1
-print(count)
+for name in sorted(present_everywhere):
+    print(name)

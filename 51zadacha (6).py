@@ -1,7 +1,9 @@
 ﻿n = int(input())
-found = False
+total = 0
 for i in range(n):
-    s = input()
-    if "кот" in s or "Кот" in s:
-        found = True
-print("МЯУ" if found else "НЕТ")
+    x = int(input())
+    if i % 2 == 0:
+        total += x
+    else:
+        total -= x
+print(total)

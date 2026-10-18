@@ -1,10 +1,12 @@
-﻿found = False
+﻿total = 0
+count = 0
+answer = -1
 while True:
-    s = input()
-    if s == "СТОП":
+    x = int(input())
+    if x == 0:
         break
-    if "пёс" in s or "Пёс" in s:
-        found = False
-    elif "кот" in s or "Кот" in s:
-        found = True
-print("МЯУ" if found else "НЕТ")
+    count += 1
+    total += x
+    if total == 10 and answer == -1:
+        answer = count
+print(answer)
