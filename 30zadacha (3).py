@@ -1,4 +1,17 @@
 ﻿a = int(input())
 b = int(input())
-print(a // b)
-print(a % b)
+op = input()
+
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    if b == 0:
+        print("ОШИБКА")
+    else:
+        print(a / b)
+else:
+    print("ОШИБКА")

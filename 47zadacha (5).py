@@ -1,4 +1,5 @@
-﻿s = input()
-n = int(input())
-for i in range(1, n + 1):
-    print(i, ": ", s, sep='')
+﻿n = int(input())
+total = 0
+for i in range(n):
+    total += int(input())
+print(total)

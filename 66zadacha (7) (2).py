@@ -9,6 +9,5 @@ for i in range(m):
         present_everywhere = lesson
     else:
         present_everywhere &= lesson
-
 for name in sorted(present_everywhere):
     print(name)

@@ -1,12 +1,8 @@
-﻿total = 0
-count = 0
-answer = -1
-while True:
+﻿n = int(input())
+total = 0
+for i in range(n):
     x = int(input())
-    if x == 0:
-        break
-    count += 1
+    if x <= 0:
+        continue
     total += x
-    if total == 10 and answer == -1:
-        answer = count
-print(answer)
+print(total)

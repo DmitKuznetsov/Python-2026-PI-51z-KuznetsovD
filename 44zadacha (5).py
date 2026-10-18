@@ -1,4 +1,4 @@
-﻿s = input()
-n = int(input())
-for i in range(1, n + 1):
-    print(i, ": ", s, sep='')
+﻿n = int(input())
+for i in range(n, -1, -1):
+    print(i)
+print("Пуск!")
