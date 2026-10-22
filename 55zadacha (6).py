@@ -1,10 +1,13 @@
-﻿line_num = 0
-found_num = -1
-while True:
-    s = input()
-    if s == "СТОП":
-        break
-    line_num += 1
-    if ("кот" in s or "Кот" in s) and found_num == -1:
-        found_num = line_num
-print(found_num)
+﻿a = int(input())
+b = int(input())
+result = []
+for i in range(a, b + 1):
+    if i % 3 == 0 and i % 5 == 0:
+        result.append("FizzBuzz")
+    elif i % 3 == 0:
+        result.append("Fizz")
+    elif i % 5 == 0:
+        result.append("Buzz")
+    else:
+        result.append(str(i))
+print(" ".join(result))

@@ -1,12 +1,14 @@
 ﻿m = int(input())
-fridge = set()
+all_dishes = set()
 for i in range(m):
-    fridge.add(input())
+    all_dishes.add(input())
 
 n = int(input())
+cooked = set()
 for i in range(n):
-    parts = input().split()
-    recipe_name = parts[0]
-    ingredients = set(parts[1:])
-    if ingredients <= fridge:
-        print(recipe_name)
+    for dish in input().split():
+        cooked.add(dish)
+
+never_cooked = all_dishes - cooked
+for dish in sorted(never_cooked):
+    print(dish)
